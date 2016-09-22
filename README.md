@@ -11,4 +11,8 @@ I can not garentee that:
 #### However
 As of the time these files are uploaded, all of them *should* be complete.
 
+## **THE CODE I DOWNLOADED HAD AN ERROR**
+Please just make an new issue, I will handle it as soon as possible
+
+
 Good luck
