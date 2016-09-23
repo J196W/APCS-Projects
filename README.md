@@ -1,5 +1,7 @@
 # APCS-Projects
 This is my code for APCS. **DO NOT COPY THIS CODE. THAT WOULD BE PLAGORISM. JUST LOOK AT IT AND ALL OF ITS GLORY**
+
+All of this was coded in Eclipse.
 ## But why
 Many people ask me later on, "How did you do this". Now, I can just send them a link to this. I will only upload projects once they are complete and have recieved a 100%.
 ## Disclaimer
@@ -10,5 +12,9 @@ I can not garentee that:
 
 #### However
 As of the time these files are uploaded, all of them *should* be complete.
+
+## **THE CODE I DOWNLOADED HAD AN ERROR**
+Please just make an new issue, I will handle it as soon as possible
+
 
 Good luck
