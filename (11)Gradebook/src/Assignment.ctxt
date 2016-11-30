@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n\ ptsPoss\ ptsEarned
+comment0.target=Assignment(java.lang.String,\ double,\ double)
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=
+comment2.target=double\ getPointsPossible()
+comment3.params=
+comment3.target=double\ getPointsEarned()
+numComments=4
