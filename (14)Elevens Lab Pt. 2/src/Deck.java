@@ -36,7 +36,7 @@ public class Deck {
 				cards.add(new Card(ranks[i], suit, values[i]));
 			}
 		}
-		size = cards.size();
+		size = cards.size() - 1;
 		shuffle();
 	}
 
