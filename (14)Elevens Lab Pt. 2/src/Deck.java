@@ -11,7 +11,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<Card> cards;
+	private ArrayList<Card> cards;
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -36,8 +36,8 @@ public class Deck {
 				cards.add(new Card(ranks[i], suit, values[i]));
 			}
 		}
-		size = cards.size() - 1;
 		shuffle();
+		size = cards.size() - 1;
 	}
 
 
@@ -62,7 +62,13 @@ public class Deck {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		ArrayList<Card> Remainders = cards;
+		for (int k = size - 1; k >= 0; k--){
+			int n = (int) (Math.random() * (Remainders.size()));
+			cards.set(k, Remainders.get(n));
+			Remainders.remove(n);
+		}
+		size = cards.size() - 1;
 	}
 
 	/**
@@ -71,8 +77,11 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		size--;
-		return cards.get(size + 1);
+		if (!cards.isEmpty()){
+			size -= 1;
+			return cards.get(size);
+		}
+		return null;
 	}
 
 	/**
@@ -81,9 +90,9 @@ public class Deck {
 	 */
 	@Override
 	public String toString() {
-		String rtn = "size = " + size + "\nUndealt cards: \n";
+		String rtn = "size = " + (size + 1) + "\nUndealt cards: \n";
 
-		for (int k = size - 1; k >= 0; k--) {
+		for (int k = size; k >= 0; k--) {
 			rtn = rtn + cards.get(k);
 			if (k != 0) {
 				rtn = rtn + ", ";
@@ -95,7 +104,7 @@ public class Deck {
 		}
 
 		rtn = rtn + "\nDealt cards: \n";
-		for (int k = cards.size() - 1; k >= size; k--) {
+		for (int k = cards.size() - 1; k >= size + 1; k--) {
 			rtn = rtn + cards.get(k);
 			if (k != size) {
 				rtn = rtn + ", ";
