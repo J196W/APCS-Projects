@@ -67,12 +67,12 @@ public class Shuffler {
 		int[] Shuffled = new int[52];
 		int k = 0;
 		for (int i = 0; i <= 25; i++){
-			Shuffled[i] = values[k];
+			Shuffled[k] = values[i];
 			k += 2;
 		}
 		k = 1;
 		for (int i = 26; i <= 51; i++){
-			Shuffled[i] = values[k];
+			Shuffled[k] = values[i];
 			k += 2;
 		}
 		values1 = Shuffled;
